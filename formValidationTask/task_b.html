@@ -1,0 +1,54 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task B</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <h1>Form validation JavaScript</h1>
+
+    <div class="formContainer">
+
+      <div class="formTitle">
+        <h2>Fill this in</h2>
+      </div>
+
+      <div class="formLeftColumn">
+        <div class="formLabel">Name:</div>
+        <div class="formLabel">Phone Number:</div>
+        <div class="formLabel">Email:</div>
+        <div class="formLabel">Address:</div>
+        <div class="formLabel">Postal Code:</div>
+        <div class="formLabel">Password:</div>
+      </div>
+
+
+      <div class="formRightColumn">
+        <form  action="" method="post" autocomplete="on">
+          <input id="commentName" onkeyup="validateName()" type="text" name="name" placeholder="first and last name"> <label id="commentNamePrompt" ></label><br>
+          <input id="commentPhoneNumber" onkeyup="validatePhone()" type="text" name="phoneNumber" > <label id="commentPhoneNumberPrompt" ></label><br>
+          <input id="commentEmail" onkeyup="validateEmail()"  type="text" name="email" > <label id="commentEmailPrompt" ></label><br>
+          <input id="commentAddress" onkeyup="validateAddress()" type="text" name="address"> <label id="commentAddressPrompt" ></label><br>
+          <input id="commentPostalCode" onkeyup="validatePostal()" type="number" name="postalCode"> <label  id="commentPostalCodePrompt" ></label><br>
+          <input id="commentPassword" onkeyup="validatePassword()" type="password" name="password"> <label  id="commentPasswordPrompt" ></label><br>
+            <input type="submit">
+        </form>
+      </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

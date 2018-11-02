@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task A</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <h1>Form validation HTML5</h1>
+    <div class="formContainer">
+
+      <div class="formTitle">
+        <h2>Fill this in</h2>
+      </div>
+
+      <div class="formLeftColumn">
+        <div class="formLabel">Name:</div>
+        <div class="formLabel">Phone Number:</div>
+        <div class="formLabel">Email:</div>
+        <div class="formLabel">Address:</div>
+        <div class="formLabel">Postal Code:</div>
+        <div class="formLabel">Password:</div>
+      </div>
+
+      <div class="formRightColumn">
+        <form  action="" method="post" autocomplete="off">
+          <input type="text" required pattern="^[a-zA-Z-]{2,}\s?([a-zA-Z-]{2,}\s?)*$"  name="name" placeholder="first and last name"> <label id="commentNamePrompt" ></label><br>
+          <input type="text" name="phoneNumber" pattern="^[+]{1}\d{12}$" > <label id="commentPhoneNumberPrompt" ></label><br>
+          <input type="email" required pattern="^\b[a-zA-Z0-9._%+-]+\@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$" name="email" > <label id="commentEmailPrompt" ></label><br>
+          <input type="text" name="address"> <label id="commentAddressPrompt" ></label><br>
+          <input type="text" pattern="^\d{5}$" name="postalCode"><br>
+          <input type="password" pattern="^.{4,10}$" required name="password"> <br>
+            <input type="submit">
+        </form>
+      </div>
+
+    </div>
+
+
+    
+</body>
+
+</html>
