@@ -17,9 +17,9 @@
 
 <body>
 
-    <form>
-        <input>
-        <input>
+    <form action="/node/taskUploadImage" method="post" enctype="multipart/form-data">
+        <input name="fileToUpload" type="file" accept="image/*">
+        <input type="submit">
     </form>
 
     <script src="js/main.js"></script>
